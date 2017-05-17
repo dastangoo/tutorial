@@ -39,3 +39,7 @@ house8$coefficients
 house9 <- lm(ValuePerSqFt ~ I(Units + SqFt) ^ 2, housing)
 house9$coefficients
 multiplot(house1, house2, house3)
+housingNew <- read.table("data/housingNew.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE)
+head(housingNew)
+housePredict <- predict(house1, newdata = housingNew, se.fit = TRUE, interval = "prediction", level = .95)
+head(housePredict$fit)
