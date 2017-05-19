@@ -1,0 +1,28 @@
+\documentclass{article}
+%this is a comment
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png, .jpg}
+\newcommand{\dataframe}{\texttt{data.frame}}
+\author{Hamed Dastangoo}
+\title{A Simple Article}
+\date{May 19th, 2017}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+\tableofcontents
+\section{Getting Started}
+\label{sec:GettingStarted}
+This is our first section of our article. We will only talk about \dataframe{}s.
+
+A new paragraph comes after a blank line.
+
+\section{More Information}
+\label{sec:MoreInfo}
+Here is another section. In section~\ref{sec:GettingStarted} we learned about \dataframe{}s.
+\subsection{First subsection}
+\label{FirstSub}
+\subsection{SecondSub}
+\label{SecondSub}
+More content that is nested in Section~\ref{sec:MoreInfo}
+
+\end{document}
