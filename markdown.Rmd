@@ -1,0 +1,31 @@
+A Simple Site
+======================================
+
+# Header 1
+## Header 2
+
+_this will be italics_
+
+__this will be bold__
+
+* Item1
+* Second Item
+* Last Item
+
+[My Website](http://www.google.com)
+
+![Alt text](figure/diamonds-plot.png)
+```{r addition}
+1 + 1
+```
+
+```{r more-complex}
+require(ggplot2)
+data(diamonds)
+head(diamonds)
+```
+
+```{r a-simple-plot, dev='png'}
+ggplot(diamonds, aes(x=carat, y=price, color=color)) + geom_point()
+```
+

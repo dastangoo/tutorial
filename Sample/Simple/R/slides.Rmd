@@ -1,0 +1,33 @@
+% Example Slideshow
+% Hamed Dastangoo
+% May 19th, 2017
+
+# First Section
+
+### First Slide in the First Section
+A list of things to cover
+* First Item
+* Second Item
+* Third Item
+
+### Some R Code
+The code below generate some results and plot
+
+```{r figure-plot, fig.cap="Simple plot of the numbers 1 through 10.", fig.show='hold'}
+1 + 1
+plot(1:10)
+2 + 2
+```
+
+# Second Section
+
+## Frist Subsection
+
+### Another information goes here
+
+## Second Subsection
+
+### Some Links
+[My Website](http://wwww.google.com)
+
+[R Bloggers](http://www.r-bloggers.com)

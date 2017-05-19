@@ -24,5 +24,21 @@ Here is another section. In section~\ref{sec:GettingStarted} we learned about \d
 \subsection{SecondSub}
 \label{SecondSub}
 More content that is nested in Section~\ref{sec:MoreInfo}
+\section{Diamonds}
+\label{sec:Diamonds}
+<<diamonds-model>>=
+#load ggplot2
+require(ggplot2)
+data(diamonds)
+head(diamonds)
+
+modl <- lm(price ~ carat + cut, data=diamonds)
+summary(modl)
+@
+
+The diamonds are plotted in Figure~\ref{fig:diamonds-plot}.
+<<diamonds-plot, fig.cap="Scatterploty of diamonds", out.width='.95\\linewidth', dev='png'>>=
+ggplot(diamonds, aes(x=carat, y=price, color=color)) + geom_point()
+@
 
 \end{document}

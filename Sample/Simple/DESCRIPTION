@@ -1,0 +1,11 @@
+Package: Simple
+Type: Package
+Title: Simple Example
+Version: 0.1.0
+Author: Hamed Dastangoo
+Maintainer: Hamed Dastangoo <hamed.dastangoo@gmail.com>
+Description: This is simple example of writing packages.
+License: BSD
+Encoding: UTF-8
+LazyData: true
+
